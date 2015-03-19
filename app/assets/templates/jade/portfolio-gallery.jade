@@ -1,0 +1,11 @@
+.container-full
+    H1.page-message Some works of mine.
+    section.content.content--cyan.content--skewed-right
+        #portfolio
+            #image-gallery
+                .thumb-nail(ng-repeat="project in portfolioItems")
+                    img(ng-src="{{'assets/images/' + project.thumbnail}}")
+                    .shade
+                        .project-title.break
+                                a(ui-sref="portfolio.item({id: \project.id})") {{project.title}}
+                            a.hover.hover--green(ui-sref="portfolio.item({id: \project.id})")

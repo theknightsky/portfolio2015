@@ -1,0 +1,15 @@
+
+<div class="container">
+  <section class="content content--bleed content--black content--no-margin">
+    <section id="portfolio-item">
+      <div class="close-btn"><a ui-sref="portfolio.gallery"><span class="mdi mdi-close"></span></a></div>
+      <H1><span class="accent accent--{{item.accentColor}}">#</span> {{item.title}}</H1>
+      <p>{{item.description}}</p>
+      <H4>Resources:</H4>
+      <ul class="resource-list">
+        <li ng-repeat="resource in item.resources.split(',')" class="accent accent--{{item.accentColor}} mdi mdi-label"><span> {{resource}}</span></li>
+      </ul>
+      <div><img src="http://placehold.it/500x500"/></div>
+    </section>
+  </section>
+</div>

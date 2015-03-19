@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skyler Knight 2015</title>
+  <link rel="stylesheet" href="assets/final.css">
+</head>
+<body ng-app="app" ng-controller="mainCtrl" ng-class="{'intro--hidden': $root.hideIntro}">
+  <section id="intro">
+    <div class="container">
+      <div class="logo logo--big"><a ui-sref="intro"><img src="assets/images/logo-red.png" alt="Skyler Knight"></a>
+        <div id="logo-name">SKYLER KNIGHT</div>
+      </div>
+      <div class="hero-message">
+        <H1>I'm Skyler Knight. One of the hardest workers you'll ever meet. Let's create greatness together.</H1>
+      </div>
+    </div>
+    <nav id="nav">
+      <div class="container">
+        <div class="logo logo--small"><a ui-sref="intro"><img ui-sref="intro" src="assets/images/logo-blue-grey.png" alt="Skyler Knight"></a></div>
+        <ul>
+          <li><a ui-sref="contact">Contact</a></li>
+          <li><a ui-sref="portfolio.gallery">Portfolio</a></li>
+          <li><a ui-sref="resume">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <main id="wrapper" ui-view></main>
+  <script src="assets/final.js"></script>
+</body>

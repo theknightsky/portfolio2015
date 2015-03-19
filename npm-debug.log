@@ -1,26 +1,25 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'init' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'uninstall', 'node-notifier' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
-4 silly package data undefined
-5 info init written successfully
-6 error Error: Invalid name: "Skyler Knight Portolio"
-6 error     at ensureValidName (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:315:15)
-6 error     at Object.module.exports.fixNameField (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:204:5)
-6 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:30:38
-6 error     at Array.forEach (native)
-6 error     at normalize (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:29:15)
-6 error     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:342:33)
-6 error     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
-6 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:266:40
-6 error     at evalmachine.<anonymous>:271:14
-6 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
-7 error If you need help, you may report this *entire* log,
-7 error including the npm and node versions, at:
-7 error     <http://github.com/npm/npm/issues>
-8 error System Darwin 14.0.0
-9 error command "node" "/usr/local/bin/npm" "init"
-10 error cwd /Applications/MAMP/htdocs/portfolio2015
-11 error node -v v0.10.32
-12 error npm -v 1.4.28
-13 verbose exit [ 1, true ]
+4 verbose node_modules/node-notifier unbuild
+5 info preuninstall node-notifier@4.1.2
+6 info uninstall node-notifier@4.1.2
+7 verbose true,/Applications/MAMP/htdocs/portfolio2015/node_modules,/Applications/MAMP/htdocs/portfolio2015/node_modules unbuild node-notifier@4.1.2
+8 info postuninstall node-notifier@4.1.2
+9 error Error: EACCES, unlink '/Applications/MAMP/htdocs/portfolio2015/node_modules/node-notifier/node_modules/.bin/semver'
+9 error  { [Error: EACCES, unlink '/Applications/MAMP/htdocs/portfolio2015/node_modules/node-notifier/node_modules/.bin/semver']
+9 error   errno: 3,
+9 error   code: 'EACCES',
+9 error   path: '/Applications/MAMP/htdocs/portfolio2015/node_modules/node-notifier/node_modules/.bin/semver' }
+10 error Please try running this command again as root/Administrator.
+11 error System Darwin 14.0.0
+12 error command "node" "/usr/local/bin/npm" "uninstall" "node-notifier"
+13 error cwd /Applications/MAMP/htdocs/portfolio2015
+14 error node -v v0.10.32
+15 error npm -v 1.4.28
+16 error path /Applications/MAMP/htdocs/portfolio2015/node_modules/node-notifier/node_modules/.bin/semver
+17 error code EACCES
+18 error errno 3
+19 error stack Error: EACCES, unlink '/Applications/MAMP/htdocs/portfolio2015/node_modules/node-notifier/node_modules/.bin/semver'
+20 verbose exit [ 3, true ]

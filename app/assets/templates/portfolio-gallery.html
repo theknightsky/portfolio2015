@@ -1,0 +1,15 @@
+
+<div class="container-full">
+  <H1 class="page-message">Some works of mine.</H1>
+  <section class="content content--cyan content--skewed-right">
+    <div id="portfolio">
+      <div id="image-gallery">
+        <div ng-repeat="project in portfolioItems" class="thumb-nail"><img ng-src="{{'assets/images/' + project.thumbnail}}"/>
+          <div class="shade">
+            <div class="project-title break"><a ui-sref="portfolio.item({id: project.id})">{{project.title}}</a></div><a ui-sref="portfolio.item({id: project.id})" class="hover hover--green"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

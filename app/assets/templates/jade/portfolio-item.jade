@@ -1,0 +1,17 @@
+.container
+    section(class="content content--bleed content--black content--no-margin")
+        section#portfolio-item
+            .close-btn
+                a(ui-sref="portfolio.gallery")
+                    span.mdi.mdi-close
+            H1
+                span(class="accent accent--{{item.accentColor}}") #
+                |  {{item.title}}
+            p {{item.description}}
+            H4 Resources:
+            ul.resource-list
+                li(class="accent accent--{{item.accentColor}} mdi mdi-label" ng-repeat="resource in item.resources.split(',')")
+                    span  {{resource}}
+
+            div()
+                img(src="http://placehold.it/500x500")

@@ -13,5 +13,16 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('index');
+});
+
+Route::group(array('prefix' => 'api'), function(){
+    Route::resource('portfolio', 'PortfolioController',
+        array('only' => ['index','show']));
+});
+
+App::missing(function($exception)
+{
+    // return Response::view('errors.missing', array(), 404);
+    return Redirect::to('/');
 });
