@@ -95,7 +95,7 @@ class PortfolioTableSeeder extends Seeder {
 
             Portfolio::create([
                 'title' => 'Seating App',
-                'images' => 'move-seating01.png,move-seating02.png,move-seating03.png',
+                'images' => 'movie-seating01.png,movie-seating02.png,movie-seating03.png',
                 'thumbnail' => 'movie-seating-thumbnail.png',
                 'description' => "One day I was looking to buy movie tickets online for my parents and the seat selection process was horrendous. I thought I would take it upon myself to create a more simple and straight forward approach to choosing movie seats online. This is the result. The app is built on Backbone and allows users to choose the number and location of there seats.",
                 'resources' => 'HTML5,CSS3,Compass/SCSS,Susy,Backbone,Underscore,RequireJsJquery,Bootstrap,Git',

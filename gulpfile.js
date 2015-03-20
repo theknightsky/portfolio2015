@@ -133,7 +133,7 @@ gulp.task('dist-index', function(){
 gulp.task('dist-img', function(){
 
     gulp.src(paths.assets + 'images/*.png')
-        // .pipe(optipng(['-o2']))
+        .pipe(optipng(['-o2']))
         .pipe(gulp.dest(paths.public + 'assets/images'))
         .pipe(notify({ message: 'Images optimized!', onLast: true}));
 
