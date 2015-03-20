@@ -13,13 +13,15 @@
 
 Route::get('/', function()
 {
-	return View::make('index');
+    return View::make('index');
 });
 
 Route::group(array('prefix' => 'api'), function(){
     Route::resource('portfolio', 'PortfolioController',
         array('only' => ['index','show']));
 });
+
+Route::post('contactRequest','ContactController@getContactForm');
 
 App::missing(function($exception)
 {

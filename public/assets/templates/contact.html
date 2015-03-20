@@ -3,12 +3,14 @@
   <H1 class="page-message">Get in touch.</H1>
   <section class="content content--bleed content--light-green content--skewed-left">
     <section id="contact">
+      <form></form>
       <H1><span class="mdi mdi-github-circle"> </span> theknightsky</H1>
       <H1><span class="mdi mdi-gmail"> </span> skyler.knight22@gmail.com</H1>
-      <form id="contact-form">
-        <input type="text" placeholder="Name" required="required"/>
-        <input type="text" placeholder="Email" required="required"/>
-        <textarea name="message" placeholder="Message" required="required"></textarea>
+      <form id="contact-form" method="POST" action="http://localhost:8888/portfolio2015/public/contactRequest" accept-charset="UTF-8">
+        <input id="fullName" name="fullName" type="text" placeholder="Name" required="required"/>
+        <input id="email" name="email" type="text" placeholder="Email" required="required"/>
+        <input id="math" name="math" type="text" placeholder="2 + 2 = ?" required="required"/>
+        <textarea id="contactMessage" name="contactMessage" placeholder="Message" required="required"></textarea>
         <button type="submit" class="mdi mdi-send"></button>
       </form>
     </section>

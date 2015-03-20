@@ -39,10 +39,10 @@ app.config(['$stateProvider','$urlRouterProvider',function ($stateProvider,$urlR
 app.factory('Portfolio', ['$http', function ($http){
     return {
         getAll: function() {
-            return $http.get('/api/portfolio');
+            return $http.get('../public/api/portfolio');
         },
         getSingle: function(id) {
-            return $http.get('/api/portfolio/' + id);
+            return $http.get('../public/api/portfolio/' + id);
         }
     };
 }]);

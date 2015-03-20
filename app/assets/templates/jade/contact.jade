@@ -3,14 +3,17 @@
 
     section.content.content--bleed.content--light-green.content--skewed-left
         section#contact
+            form()
             H1
                 span.mdi.mdi-github-circle 
                 |  theknightsky
             H1
                 span.mdi.mdi-gmail 
                 |  skyler.knight22@gmail.com
-            form#contact-form
-                input(type="text" placeholder="Name" required)
-                input(type="text" placeholder="Email" required)
-                textarea(name="message" placeholder="Message" required)
+            //- form#contact-form(method="POST" action="http:://skylerknight.com/contactRequest" accept-charset="UTF-8")
+            form#contact-form(method="POST" action="http://localhost:8888/portfolio2015/public/contactRequest" accept-charset="UTF-8")
+                input(id="fullName" name="fullName" type="text" placeholder="Name" required)
+                input(id="email" name="email" type="text" placeholder="Email" required)
+                input(id="math" name="math" type="text" placeholder="2 + 2 = ?" required)
+                textarea(id="contactMessage" name="contactMessage" placeholder="Message" required)
                 button(type="submit").mdi.mdi-send
