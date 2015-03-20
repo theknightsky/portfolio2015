@@ -86,7 +86,7 @@ class PortfolioTableSeeder extends Seeder {
 
             Portfolio::create([
                 'title' => 'PHS',
-                'images' => 'phs01.png,phs02.png',
+                'images' => 'phs01.png,phs02.png,phs03.png',
                 'thumbnail' => 'phs-thumbnail.png',
                 'description' => "The very first website I created was for my highschool, Parowan High School. That was a long time ago and unfortunately they don't have anyone to keep the website up to date. I thought I would try to help out and started working on a new and improved version.",
                 'resources' => 'HTML5,CSS3,Compass/SCSS,Susy,Jquery,Bootstrap',
