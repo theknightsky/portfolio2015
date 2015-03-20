@@ -138,8 +138,10 @@ body
             &:hover 
                 color: $md-red-500
     img
-        +full
+        width: 100%
+        height: auto
         +rhythm-margins(1)
+        +box-shadow(0 0 10px 2px rgba(black,0.5))
 
 #image-gallery 
     +clearfix
@@ -316,6 +318,7 @@ body
         list-style-type: none
         display: inline-block
         margin-right: 0.5em
+        +adjust-font-size-to(16px)
 
         span
             color: $md-white
@@ -410,7 +413,7 @@ body
         +margin-leader(1)
         +padding-leader(0.5)
         span.accent
-            font-weight: 100
+            font-weight: 300
             +full
             +break
             +adjust-font-size-to(0.8em)
@@ -429,6 +432,8 @@ body
             color: $md-red-500    
         &--teal
             color: $md-teal-500    
+        &--blue
+            color: $md-blue-500    
         &--amber
             color: $md-amber-500    
         &--indigo
@@ -583,6 +588,9 @@ body.intro--hidden
     .container
         +span(12)
         +squish(0)
+    .resource-list
+        li
+            +adjust-font-size-to(14px)
     .content
         +span(11)
         +squish(0)
@@ -592,6 +600,9 @@ body.intro--hidden
 
         &--bleed
             +bleed(0 0 narrow)
+
+        &--no-margin
+            padding-top: 0
         h1
             text-align: center
             +adjust-font-size-to(26px, 1.5)
@@ -599,6 +610,10 @@ body.intro--hidden
             span
                 +full
                 +break
+
+        h2
+            +padding-leader(0.2)
+            +adjust-font-size-to(18px)
 
         p
             +adjust-font-size-to(14px, 1)

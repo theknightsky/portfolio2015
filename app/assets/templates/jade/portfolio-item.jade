@@ -13,5 +13,6 @@
                 li(class="accent accent--{{item.accentColor}} mdi mdi-label" ng-repeat="resource in item.resources.split(',')")
                     span  {{resource}}
 
-            div()
-                img(src="http://placehold.it/500x500")
+            div#portfolio-images
+                div(ng-repeat="image in item.images.split(',')")
+                    img(src="assets/images/{{image}}", alt="{{item.title}}")

@@ -9035,13 +9035,13 @@ body {
   color: #f44336;
 }
 #portfolio-item img {
-  clear: both;
   width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
+  height: auto;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  -moz-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 #image-gallery {
@@ -9363,6 +9363,8 @@ body {
   list-style-type: none;
   display: inline-block;
   margin-right: 0.5em;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 .resource-list li span {
   color: #ffffff;
@@ -9503,7 +9505,7 @@ body {
   padding-top: 0.75em;
 }
 .content h2 span.accent {
-  font-weight: 100;
+  font-weight: 300;
   clear: both;
   width: 100%;
   float: left;
@@ -9532,6 +9534,9 @@ body {
 }
 .content .accent--teal {
   color: #009688;
+}
+.content .accent--blue {
+  color: #2196f3;
 }
 .content .accent--amber {
   color: #ffc107;
@@ -9946,6 +9951,11 @@ body.intro--hidden #nav {
     margin-right: 0%;
   }
 
+  .resource-list li {
+    font-size: 0.875em;
+    line-height: 1.71429em;
+  }
+
   .content {
     width: 91.52542%;
     float: left;
@@ -9961,6 +9971,9 @@ body.intro--hidden #nav {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
   }
+  .content--no-margin {
+    padding-top: 0;
+  }
   .content h1 {
     text-align: center;
     font-size: 1.625em;
@@ -9973,6 +9986,11 @@ body.intro--hidden #nav {
     margin-left: 0;
     margin-right: 0;
     clear: both;
+  }
+  .content h2 {
+    padding-top: 0.3em;
+    font-size: 1.125em;
+    line-height: 1.33333em;
   }
   .content p {
     font-size: 0.875em;

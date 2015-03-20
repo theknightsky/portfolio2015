@@ -9,7 +9,9 @@
       <ul class="resource-list">
         <li ng-repeat="resource in item.resources.split(',')" class="accent accent--{{item.accentColor}} mdi mdi-label"><span> {{resource}}</span></li>
       </ul>
-      <div><img src="http://placehold.it/500x500"/></div>
+      <div id="portfolio-images">
+        <div ng-repeat="image in item.images.split(',')"><img src="assets/images/{{image}}" alt="{{item.title}}"/></div>
+      </div>
     </section>
   </section>
 </div>
