@@ -23,7 +23,7 @@ class PortfolioTableSeeder extends Seeder {
 
             Portfolio::create([
                 'title' => "Passkeep",
-                'images' => "passkeep01.png, passkeep02.png, passkeep03.png, passkeep04.png, passkeep05.png, passkeep06.png",
+                'images' => "passkeep01.png,passkeep02.png,passkeep03.png,passkeep04.png,passkeep05.png,passkeep06.png",
                 'thumbnail' => "passkeep-thumbnail.png",
                 'description' => "A web application that I created in order to stop forgetting my passwords, Passkeep stores all my passwords in one safe place. The app is built with Backbone wit features such as password strength detection, view/hide options, and password search.",
                 'resources' => 'HTML5,CSS3,Compass/SASS,Susy 2,Backbone,Underscore,RequireJS,Jquery,Github,Git',
