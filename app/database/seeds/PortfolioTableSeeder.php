@@ -22,9 +22,9 @@ class PortfolioTableSeeder extends Seeder {
         // }
 
             Portfolio::create([
-                'title' => 'Passkeep',
-                'images' => 'passkeep01.png,passkeep02.png,passkeep03.png,passkeep04.png,passkeep05.png,passkeep06.png',
-                'thumbnail' => 'passkeep-thumbnail.png',
+                'title' => "Passkeep",
+                'images' => "passkeep01.png, passkeep02.png, passkeep03.png, passkeep04.png, passkeep05.png, passkeep06.png",
+                'thumbnail' => "passkeep-thumbnail.png",
                 'description' => "A web application that I created in order to stop forgetting my passwords, Passkeep stores all my passwords in one safe place. The app is built with Backbone wit features such as password strength detection, view/hide options, and password search.",
                 'resources' => 'HTML5,CSS3,Compass/SASS,Susy 2,Backbone,Underscore,RequireJS,Jquery,Github,Git',
                 'accentColor' => 'green',
@@ -50,7 +50,7 @@ class PortfolioTableSeeder extends Seeder {
 
             Portfolio::create([
                 'title' => 'Learncast',
-                'images' => 'passkeep01.png,passkeep02.png',
+                'images' => 'learncast01.png,learncast02.png',
                 'thumbnail' => 'learncast-thumbnail.png',
                 'description' => "A mobile web application design I was asked to create for a partner of LearnKey; LearnCast. The requirement was simply to design a mobile app, but I went all out and created a working prototype with HTML5, CSS3, and a little bit of Jquery for some basic functionality.",
                 'resources' => 'HTML5,CSS3,Compass/SASS,Susy 2,Backbone,Jquery,Github,Git,Photoshop',
@@ -86,7 +86,7 @@ class PortfolioTableSeeder extends Seeder {
 
             Portfolio::create([
                 'title' => 'PHS',
-                'images' => 'passkeep01.png,passkeep02.png',
+                'images' => 'phs01.png,phs02.png',
                 'thumbnail' => 'phs-thumbnail.png',
                 'description' => "The very first website I created was for my highschool, Parowan High School. That was a long time ago and unfortunately they don't have anyone to keep the website up to date. I thought I would try to help out and started working on a new and improved version.",
                 'resources' => 'HTML5,CSS3,Compass/SCSS,Susy,Jquery,Bootstrap',
