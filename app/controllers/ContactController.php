@@ -25,7 +25,7 @@ class ContactController extends \BaseController {
 		    {
 		        $message->from($data['email'] , $data['fullName']);
 		//email 'To' field: cahnge this to emails that you want to be notified.                    
-		$message->to('skyler.knight22@gmail.com', 'John')->cc('tutorskylerknight@gmail.com')->subject('Message from skylerknight.com');
+		$message->to('skylerknight.dev@gmail.com', 'Skyler Knight Dev')->subject('Message from skylerknight.com');
 
 		    });
 		    // Redirect to page
