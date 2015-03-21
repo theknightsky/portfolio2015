@@ -93,7 +93,8 @@ return array(
 	|
 	*/
 
-	'password' => '!~RspikkoBluesko24992982',
+	// 'password' => 'aqlsjjtzxrxbdtqu',
+	'password' => '!~RspikkoBluesko24299982',
 
 	/*
 	|--------------------------------------------------------------------------
