@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'skylerknight.dev@gmail.com',
+	'username' => getenv('MAIL_USERNAME'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'wxglavvacjrxiigt',
+	'password' => getenv('MAIL_PASSWORD'),
 
 	/*
 	|--------------------------------------------------------------------------
